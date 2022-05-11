@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+	font-size: 62.5%;
+}
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.glass-container {
+	margin: 0 2rem;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+.title {
+	font-size: 3rem;
+	color: black;
+	margin-bottom: 2rem;
+}
+.btn-color {
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background: transparent;
+	cursor: pointer;
+	color: black;
+	border: 0.3rem solid;
+	border-radius: 1rem;
+	border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+	animation: rotate 2.5s ease-in infinite;
+}
+@keyframes rotate {
+	50% {
+		border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+	}
+}
